@@ -22,11 +22,32 @@ while not Porcent_correta:
         else:
             if Porcent>50:
                 print ("Alta sustentabilidade!")
+                Porcent_correta=True
             else:
-                if Porcent>20 or Porcent<50:
+                if Porcent>20:
                     print ("Moderada sustentabilidade!")
+                    Porcent_correta=True
                 else:
-                    if Porcent<20:
-                        print ("Baixa Sustentabilidade!")
-                    else:
-                        Porcent_correta=True
+                    print ("Baixa Sustentabilidade!")
+                    Porcent_correta=True
+
+print ("\n1. Transporte público \n2. Bicileta \n3. Caminhada \n4. Carro (com gasolina) \n5. Carro elétrico \n6.Carona Compartilhada \n")
+Mtransporte_correto=False
+while not Mtransporte_correto:
+    try:
+        MeioTransporte=int(input("Qual meio de transporte você utilizou hoje? "))
+    except ValueError:
+        print ("Digite um número!")
+    else:
+        if MeioTransporte<1 or MeioTransporte>9:
+            print ("Escolha um meio de transporte de 1 a 9!")
+        else:
+            if MeioTransporte==5 or MeioTransporte==2 or MeioTransporte==3:
+                print ("Alta Sustentabilidade!")
+                Mtransporte_correto=True
+            elif MeioTransporte==6 or MeioTransporte==1:
+                print ("Moderada sustentabilidade!")
+                Mtransporte_correto=True
+            else:
+                print ("Baixa Sustentabilidade!")
+                Mtransporte_correto=True
