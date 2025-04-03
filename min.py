@@ -21,17 +21,17 @@ while not Porcent_correta:
             print ("A porcentagem deve ser de 0 a 100%!")
         else:
             if Porcent>50:
-                print ("Alta sustentabilidade!")
+                print ("🟢 Alta sustentabilidade!")
                 Porcent_correta=True
             else:
                 if Porcent>20:
-                    print ("Moderada sustentabilidade!")
+                    print ("🟡 Moderada sustentabilidade!")
                     Porcent_correta=True
                 else:
-                    print ("Baixa Sustentabilidade!")
+                    print ("🔴 Baixa Sustentabilidade!")
                     Porcent_correta=True
 
-print ("\n1. Transporte público \n2. Bicileta \n3. Caminhada \n4. Carro (com gasolina) \n5. Carro elétrico \n6.Carona Compartilhada \n")
+print ("\n1. Transporte público 🚌 \n2. Bicileta 🚲 \n3. Caminhada 🚶 \n4. Carro (com gasolina) 🚗 \n5. Carro elétrico 💡 \n6. Carona Compartilhada 👥 \n")
 Mtransporte_correto=False
 while not Mtransporte_correto:
     try:
@@ -39,15 +39,15 @@ while not Mtransporte_correto:
     except ValueError:
         print ("Digite um número!")
     else:
-        if MeioTransporte<1 or MeioTransporte>9:
-            print ("Escolha um meio de transporte de 1 a 9!")
+        if MeioTransporte<1 or MeioTransporte>6:
+            print ("Escolha um meio de transporte de 1 a 6!")
         else:
             if MeioTransporte==5 or MeioTransporte==2 or MeioTransporte==3:
-                print ("Alta Sustentabilidade!")
+                print ("🟢 Alta sustentabilidade!")
                 Mtransporte_correto=True
             elif MeioTransporte==6 or MeioTransporte==1:
-                print ("Moderada sustentabilidade!")
+                print ("🟡 Moderada sustentabilidade!")
                 Mtransporte_correto=True
             else:
-                print ("Baixa Sustentabilidade!")
+                print ("🔴 Baixa Sustentabilidade!")
                 Mtransporte_correto=True
