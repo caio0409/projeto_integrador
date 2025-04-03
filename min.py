@@ -1,3 +1,44 @@
+dig_cor=False
+while not dig_cor:
+    try:
+        data_dia=int(input("Qual o dia?: "))
+    except ValueError:
+        print("Apenas números inteiros")
+        continue
+    if data_dia>31 or data_dia<=0:
+        print("Digite um dia do mês entre 1 e 31")
+    else:
+        try:
+            data_mes=int(input("Qual o mês?: "))
+        except ValueError:
+            print("Apenas números")
+            continue
+        if data_mes>12 or data_mes<=0:
+            print("Digite mês entre 1 e 12")
+            continue
+        if data_dia>29 and data_mes==2:
+            print("Esse mês tem 29 dias ou menos")
+            continue
+        if data_dia>30 and data_mes==4 or data_mes==6 or data_mes==9 or data_mes==11:
+            print("Esse mês tem 30 dias ou menos")
+            continue
+        else:
+            try:
+                data_ano=int(input("Qual o ano?: "))
+            except ValueError:
+                print("Apenas números")
+                continue
+            if data_ano>3000 or data_ano<1900:
+                print("Coloque um ano na faixa de 1900 e 3000")
+                continue
+            if data_dia==29 and data_mes==2 and data_ano%4!=0:
+                print("Fevereiro só tem 29 em anos bissextos")
+            else:
+                        dig_cor=True
+data_geral=f"{data_dia}/{data_mes}/{data_ano}"
+print("Data:", data_geral)
+
+
 Kwh_correto=False
 while not Kwh_correto:
     try:
