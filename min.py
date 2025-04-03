@@ -1,3 +1,22 @@
+Kwh_correto=False
+while not Kwh_correto:
+    try:
+        KWH=float(input("Quantos kWh de energia elétrica você consumiu hoje? "))
+    except ValueError:
+        print ("Digite um número!")
+    else:
+        if KWH<0: 
+            print ("O valor deve ser maior que zero!")
+        elif KWH<5:
+            print ("🟢 Alta sustentabilidade!")
+            Kwh_correto=True
+        elif KWH<10:
+            print ("🟡 Moderada sustentabilidade!")
+            Kwh_correto=True
+        else:
+            print ("🔴 Baixa Sustentabilidade!")
+            Kwh_correto=True
+            
 KG_correto=False
 while not KG_correto:
     try:
