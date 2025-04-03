@@ -3,6 +3,16 @@ Sistema sustentável de projeto integrador
 
 O código apresentado tem o objetivo de avaliar o impacto ambiental do usuário cadastrado no sistema, tendo como base o seu consumo pessoal de energia elétrica, água, geração de resíduos e o meio de transporte utilizado.
 
+1. Validação de Data: o primeiro bloco do código pede ao usuário que insira primeiramente o dia atual, o mês e o ano, todos em formato numérico. Para isso, o programa garante que as entradas estejam corretas:
+
+    a. solicitando ao usuário qual o dia do mês, garantindo que o número esteja entre 1 e 31.
+    b. solicitando o mês e garantindo que esteja entre 1 e 12.
+    c. verificando se o dia fornecido pelo usuário está de acordo com a quantidade de dias daquele mês digitado.
+    d. solicitando ao usuário o ano e verificando se está entre o intervalo de 1900 e 3000.
+    e. garantindo que caso o usuário insira dia 29 no mês fevereiro em um ano que é bissexto, essa data será rejeitada.
+
+Quando o usuário fornecer a data correta em todos os padrões, ela será formatada e printada no formato DD/MM/AAAA.
+
 1. Consumo de Energia Elétrica: o primeiro bloco de código solicita ao usuário que insira o consumo de energia elétrica em kWh. Para garantir que o valor inserido seja válido:
     a. O programa verifica se o dado digitado é um número.
     b. Caso o usuário insira um valor inválido (como uma string ou um número negativo), uma mensagem de erro é exibida.
@@ -16,6 +26,7 @@ O código apresentado tem o objetivo de avaliar o impacto ambiental do usuário 
     b. Caso o usuário insira um valor negativo, uma mensagem de erro é exibida.
 
 3. Percentual de Reciclagem: o terceiro bloco do código solicita que o usuário informe a porcentagem de resíduos reciclados. O programa:
+    
     a. Verifica se a entrada é um número inteiro entre 0 e 100.
     b. Com base na porcentagem informada, avalia a sustentabilidade do usuário:
             Mais de 50%: "Alta sustentabilidade" (🟢).
@@ -35,4 +46,4 @@ Com base na escolha, o programa classifica o meio de transporte em:
             "Moderada sustentabilidade" (🟡) para carona compartilhada e transporte público.
             "Baixa sustentabilidade" (🔴) para carro a gasolina.
 
-
+            
