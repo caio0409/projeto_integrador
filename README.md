@@ -46,12 +46,12 @@ Quando o usuário fornecer a data correta em todos os padrões, ela será format
 
 6. Escolha do Meio de Transporte: o quarto bloco pede ao usuário que informe o meio de transporte utilizado no dia. As opções disponíveis são:
 
-            Transporte público (🛸)
-            Bicicleta (🚲)
-            Caminhada (🚶)
-            Carro a gasolina (🚗)
-            Carro elétrico (💡)
-            Carona compartilhada (👥)
+        Transporte público (🚌)
+        Bicicleta (🚲)
+        Caminhada (🚶)
+        Carro a gasolina (🚗)
+        Carro elétrico (💡)
+        Carona compartilhada (👥)
 
 Com base na escolha, o programa classifica o meio de transporte em:
             Alta sustentabilidade" (🟢) para bicicleta, caminhada e carro elétrico.
