@@ -38,6 +38,26 @@ while not dig_cor:
 data_geral=f"{data_dia}/{data_mes}/{data_ano}"
 print("Data:", data_geral)
 
+Litro_Correto=False
+while not Litro_Correto:
+    try:
+        resposta=int(input("Quantos litros foram consumidos hoje? "))
+    except ValueError:
+        print("o valor inserido é invalido")
+    else:
+        if resposta<0:
+            print("o valor inserido é invalido")
+        else:
+            if resposta<150:
+                print("🟢Alta sustentabilidade!")
+                Litro_Correto=True
+            elif resposta<200:
+                print ("🟡 Sustentabilidade Moderada!")
+                Litro_Correto=True
+            else:
+                print ("🔴Baixa Sustentabilidade!")
+                Litro_Correto=True
+
 
 Kwh_correto=False
 while not Kwh_correto:
@@ -108,26 +128,6 @@ while not Mtransporte_correto:
         else:
             print ("🔴 Baixa Sustentabilidade!")
             Mtransporte_correto=True
-
-Litro_Correto=False
-while not Litro_Correto:
-    try:
-        resposta=int(input("Quantos litros foram consumidos hoje? "))
-    except ValueError:
-        print("o valor inserido é invalido")
-    else:
-        if resposta<0:
-            print("o valor inserido é invalido")
-        else:
-            Litro_Correto=True
-            if resposta<150:
-                print("🟢Alta sustentabilidade!")
-            elif resposta<200:
-                print ("🟡 Sustentabilidade Moderada!")
-            elif resposta>200:
-                print ("🔴Baixa Sustentabilidade!")
-            elif resposta==200:
-                print("Sustentabilidade Moderada!")
 
 print ("PROGRAMA ENCERRADO")
     
