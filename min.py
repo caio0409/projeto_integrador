@@ -50,13 +50,21 @@ while not Litro_Correto:
             print("o valor inserido é invalido")
         else:
             if resposta<150:
+<<<<<<< HEAD
                 print("🟢Alta sustentabilidade!")
+=======
+                print("🟢 Alta sustentabilidade!")
+>>>>>>> 85c8fc38646f595a502ffb77faf0b685601b9f7f
                 Litro_Correto=True
             elif resposta<200:
                 print ("🟡 Sustentabilidade Moderada!")
                 Litro_Correto=True
             else:
+<<<<<<< HEAD
                 print ("🔴Baixa Sustentabilidade!")
+=======
+                print ("🔴 Baixa Sustentabilidade!")
+>>>>>>> 85c8fc38646f595a502ffb77faf0b685601b9f7f
                 Litro_Correto=True
 
 
