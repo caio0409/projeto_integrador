@@ -35,8 +35,7 @@ while not dig_cor:
                 print("Fevereiro só tem 29 em anos bissextos")
             else:
                         dig_cor=True
-data_geral=f"{data_dia}/{data_mes}/{data_ano}"
-print("Data:", data_geral)
+
 
 
 Kwh_correto=False
@@ -47,15 +46,15 @@ while not Kwh_correto:
         print ("Digite um número!")
     else:
         if KWH<0: 
-            print ("O valor deve ser maior que zero!")
+             print ("O valor deve ser maior que zero!")
         elif KWH<5:
-            print ("🟢 Alta sustentabilidade!")
+            var_kwh="verde" 
             Kwh_correto=True
         elif KWH<10:
-            print ("🟡 Moderada sustentabilidade!")
+            var_kwh="amarelo" 
             Kwh_correto=True
         else:
-            print ("🔴 Baixa Sustentabilidade!")
+            var_kwh="vermelho"
             Kwh_correto=True
 
 KG_correto=False
@@ -80,13 +79,13 @@ while not Porcent_correta:
         if Porcent<0 or Porcent>100:
             print ("A porcentagem deve ser de 0 a 100%!")
         elif Porcent>50:
-            print ("🟢 Alta sustentabilidade!")
+            var_kg="verde" 
             Porcent_correta=True
         elif Porcent>20:
-            print ("🟡 Moderada sustentabilidade!")
+            var_kg="amarelo"
             Porcent_correta=True
         else:
-            print ("🔴 Baixa Sustentabilidade!")
+            var_kg="vermelho"
             Porcent_correta=True
 
 print ("\n1. Transporte público 🚌 \n2. Bicileta 🚲 \n3. Caminhada 🚶 \n4. Carro (com gasolina) 🚗 \n5. Carro elétrico 💡 \n6. Carona Compartilhada 👥 \n")
@@ -100,19 +99,19 @@ while not Mtransporte_correto:
         if MeioTransporte<1 or MeioTransporte>6:
             print ("Escolha um meio de transporte de 1 a 6!")
         elif MeioTransporte==5 or MeioTransporte==2 or MeioTransporte==3:
-            print ("🟢 Alta sustentabilidade!")
+            var_trans="verde"
             Mtransporte_correto=True
         elif MeioTransporte==6 or MeioTransporte==1:
-            print ("🟡 Moderada sustentabilidade!")
+            var_trans="amarelo" 
             Mtransporte_correto=True
         else:
-            print ("🔴 Baixa Sustentabilidade!")
+            var_trans="vermelho" 
             Mtransporte_correto=True
 
 Litro_Correto=False
 while not Litro_Correto:
     try:
-        resposta=int(input("Quantos litros foram consumidos hoje? "))
+        resposta=int(input("Quantos litros de água foram consumidos hoje? "))
     except ValueError:
         print("o valor inserido é invalido")
     else:
@@ -121,13 +120,46 @@ while not Litro_Correto:
         else:
             Litro_Correto=True
             if resposta<150:
-                print("🟢Alta sustentabilidade!")
-            elif resposta<200:
-                print ("🟡 Sustentabilidade Moderada!")
+                var_lit="verde" 
+            elif resposta<=200:
+                var_lit="amarelo" 
             elif resposta>200:
-                print ("🔴Baixa Sustentabilidade!")
-            elif resposta==200:
-                print("Sustentabilidade Moderada!")
+                var_lit="vermelho" 
+
+print("")
+print("Resultados:")
+print("")
+data_geral=f"{data_dia}/{data_mes}/{data_ano}"
+print("Data:", data_geral)
+
+if var_kwh=="verde":
+    print("🟢 Alta sustentabilidade!")
+if var_kwh=="amarelo":
+    print("🟡 Moderada sustentabilidade!")
+if var_kwh=="vermelho":
+    print ("🔴 Baixa Sustentabilidade!")
+
+if var_kg=="verde":
+    print("🟢 Alta sustentabilidade!")
+if var_kg=="verde":
+    print("🟡 Moderada sustentabilidade!")
+if var_kg=="vermelho":
+    print ("🔴 Baixa Sustentabilidade!")
+
+if var_trans=="verde":
+    print ("🟢 Alta sustentabilidade!")
+if var_trans=="amarelo":
+    print ("🟡 Moderada sustentabilidade!")
+if var_trans=="vermelho":
+    print ("🔴 Baixa Sustentabilidade!")
+
+if var_lit=="verde":
+    print("🟢 Alta sustentabilidade!")
+if var_lit=="amarelo":
+    print ("🟡 Sustentabilidade Moderada!")
+if var_lit=="vermelho":
+    print ("🔴 Baixa Sustentabilidade!")
+
 
 print ("PROGRAMA ENCERRADO")
     
