@@ -14,6 +14,7 @@ O código apresentado tem o objetivo de avaliar o impacto ambiental do usuário 
 Quando o usuário fornecer a data correta em todos os padrões, ela será formatada e printada no formato DD/MM/AAAA.
 
 2. Avaliação do consumo de água: o segundo bloco do código irá avaliar o consumo de água do usuário e classificando sua sustentabilidade de acordo com:
+
     a. a quantidade de água utilizada no dia, verificando se a entrada é válida (ou seja, se é numérica).
     b. caso o usuário coloque um número negativo, o programa retorna uma mensagem de erro.
     c. com base no consumo inserido, o código vai categorizar a sustentabilidade em:
@@ -22,6 +23,7 @@ Quando o usuário fornecer a data correta em todos os padrões, ela será format
             Mais de 200 litros: "Baixa sustentabilidade" (🔴)
 
 3. Consumo de Energia Elétrica: o primeiro bloco de código solicita ao usuário que insira o consumo de energia elétrica em kWh. Para garantir que o valor inserido seja válido:
+
     a. O programa verifica se o dado digitado é um número.
     b. Caso o usuário insira um valor inválido (como uma string ou um número negativo), uma mensagem de erro é exibida.
     c. Com base no consumo informado, o usuário recebe um feedback sobre seu nível de sustentabilidade:
@@ -30,6 +32,7 @@ Quando o usuário fornecer a data correta em todos os padrões, ela será format
             Mais de 10 kWh: "Baixa sustentabilidade" (🔴).
 
 4. Geração de Resíduos Não Recicláveis: o segundo bloco do código pede ao usuário para inserir a quantidade de resíduos não recicláveis gerados (em kg). O programa:
+
     a. Verifica se a entrada é um número.
     b. Caso o usuário insira um valor negativo, uma mensagem de erro é exibida.
 
@@ -42,6 +45,7 @@ Quando o usuário fornecer a data correta em todos os padrões, ela será format
             Abaixo de 20%: "Baixa sustentabilidade" (🔴).
 
 6. Escolha do Meio de Transporte: o quarto bloco pede ao usuário que informe o meio de transporte utilizado no dia. As opções disponíveis são:
+
             Transporte público (🛸)
             Bicicleta (🚲)
             Caminhada (🚶)
