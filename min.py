@@ -130,5 +130,5 @@ while not Mtransporte_correto:
             print ("🔴 Baixa Sustentabilidade!")
             Mtransporte_correto=True
 
-print ("PROGRAMA ENCERRADO")
+print ("Programa Encerrado!")
     
