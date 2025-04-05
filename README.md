@@ -57,5 +57,3 @@ Com base na escolha, o programa classifica o meio de transporte em:
             Alta sustentabilidade" (🟢) para bicicleta, caminhada e carro elétrico.
             "Moderada sustentabilidade" (🟡) para carona compartilhada e transporte público.
             "Baixa sustentabilidade" (🔴) para carro a gasolina.
-
-            teste pro jian
