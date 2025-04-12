@@ -162,6 +162,6 @@ if var_lit=="amarelo":
 if var_lit=="vermelho":
     print ("🔴 Baixa Sustentabilidade!")
 
-
+print()
 print ("PROGRAMA ENCERRADO")
     
