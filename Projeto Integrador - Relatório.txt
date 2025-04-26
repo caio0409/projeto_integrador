@@ -1,0 +1,146 @@
+1.     INTRODUÇÃO
+
+
+Segundo a ONU, o Brasil está em estado de alerta, visto que, em média, cada brasileiro gasta em média 154 litros de água por dia, ultrapassando os 110 litros necessários. Além disso, os problemas com o consumo excessivo de energia elétrica, de transportes que causam poluição e o descarte incorreto de resíduos agravam ainda mais os problemas ambientais do país. Diante desses problemas citados, nossa equipe decidiu criar um Sistema de Controle de Sustentabilidade Pessoal, com a finalidade de auxiliar o povo brasileiro a adotar um novo estilo de vida sustentável e ambientalmente responsável.
+
+
+2.     JUSTIFICATIVA
+
+
+Dado esses cenários, seguem os dados de cada um:
+●	O consumo de energia elétrica no Brasil tem aumentado nos últimos anos, no começo de 2024 foram usados 72.416 megawatts, 5% a mais do que o mesmo período do ano anterior.
+●	Conforme o Panorama de resíduos, foram produzidos mais de 80 milhões de toneladas de resíduos sólidos, sendo 29,7 milhões de toneladas destinadas a locais inadequados. 
+●	O transporte terrestre gera mais de 70% da poluição de CO2 no ar, sendo 45% dos carros de passeio, os mais poluentes.
+Frente a esses desafios, o software criado irá desenvolver cálculos diante dos dados apresentados de cada dia, como os de consumo de água e energia elétrica, o uso de transporte e o descarte de resíduos. Será calculado os valores e feita uma classificação de sustentabilidade, buscando promover o uso consciente de cada produto e contribuir para a sustentabilidade pessoal de cada indivíduo do nosso país.
+
+
+3.     OBJETIVOS
+
+O objetivo deste projeto é desenvolver um sistema de monitoramento de sustentabilidade pessoal que auxilie os usuários a acompanharem e avaliarem seus hábitos diários em relação ao consumo de recursos naturais e geração de resíduos. Através da coleta de dados sobre o consumo de água, energia elétrica, produção de lixo e uso de determinado meio de transporte, o sistema fornecerá uma classificação de sustentabilidade para cada um desses tópicos, permitindo que o usuário tenha uma visão clara do impacto ambiental de sua rotina diária. Dessa forma, o projeto busca incentivar práticas mais sustentáveis e promover a conscientização sobre a importância da redução do consumo de recursos e da adoção de alternativas ecologicamente sustentáveis.
+
+Além disso, o projeto visa proporcionar uma solução prática e acessível para que os usuários possam registrar e monitorar seus hábitos de maneira simples e eficaz. O sistema, desenvolvido em Python, será projetado para processar as informações inseridas em um banco de dados e gerar tabelas que auxiliem na análise dos dados e na identificação de oportunidades para melhorias na rotina de consumo. Com isso, pretendemos contribuir com o alcance de uma rotina mais sustentável, na qual o podemos decidir qual será o melhor método a ser adotado em relação à preservação do meio ambiente.
+Objetivos gerais: 
+O sistema EcoLife tem como objetivo principal auxiliar os usuários no acompanhamento de seus hábitos diários relacionados ao consumo de recursos naturais e à geração de resíduos. Através da coleta e análise de informações sobre o uso de água, energia elétrica, descarte de resíduos e meio de transporte utilizado, o sistema classifica a sustentabilidade dessas ações. Dessa forma, busca conscientizar os indivíduos sobre seu impacto ambiental e incentivá-los a adotar práticas mais sustentáveis, contribuindo para a preservação do meio ambiente.
+
+Objetivos específicos:
+ 
+·   	Registrar os dados diários de consumo e descarte – Permitir que os usuários insiram informações sobre o consumo de água, energia elétrica, geração de resíduos e meio de transporte utilizado.
+
+·   	Classificar o nível de sustentabilidade – Analisar os dados coletados e fornecer uma classificação de sustentabilidade para cada aspecto monitorado, utilizando critérios predefinidos.
+
+·   	Promover a conscientização ambiental – Auxiliar os usuários a compreenderem o impacto de seus hábitos diários no meio ambiente e incentivá-los a adotarem práticas mais sustentáveis.
+
+·   	Fornecer um mecanismo simples e acessível – Desenvolver um sistema intuitivo e funcional, de fácil utilização, para garantir que qualquer usuário possa monitorar seus hábitos sustentáveis de maneira eficiente.
+
+·   	Estimular mudanças de comportamento – A partir da análise dos dados e da classificação gerada, encorajar os usuários a reduzirem seu consumo excessivo de recursos e adotarem escolhas mais ecológicas em sua rotina.
+  
+4.     ESCOPO
+O projeto tem como objetivo criar um sistema de acompanhamento de hábitos sustentáveis que permita aos usuários avaliar e melhorar seu impacto ambiental diário. O sistema coletará informações sobre o uso de recursos naturais, como água e energia, e a geração de resíduos, fornecendo uma análise de sustentabilidade e incentivando mudanças positivas nos hábitos diários, sendo voltado para indivíduos que querem ter benefícios como:
+●	Melhora dos hábitos sustentáveis.
+●	Acompanhamento de metas pessoais.
+●	Relatórios finais sobre os dados dos usuários.
+Assim, para isso, o EcoLife utilizará dados de consumos e hábitos pessoais e produzirá metas sustentáveis, indicadores ambientais e recomendações personalizadas. Logo, a origem dos dados vem de seus próprios usuários, que irão fazer a entrada manual das informações, visando, como destino, atingir as metas estabelecidas e gerar relatórios.
+ 
+5.     NÃO ESCOPO
+●	Anexo de arquivo.
+●	Gestão de Sustentabilidade de Empresas.
+●	Automação completa com dispositivos domésticos.
+●	Venda de produtos sustentáveis. 
+●	Gamificação por meta alcançada.
+
+6.     REQUISITOS FUNCIONAIS
+Os requisitos funcionais abrangem todas as funcionalidades que um sistema deve ter, ou seja, as atividades que o usuário pode fazer utilizando o sistema. Assim, temos como requisitos funcionais do nosso Sistema de Controle Sustentável Pessoal as seguintes funcionalidades: 
+●	Cadastro de Usuários: dentro de um sistema, incluindo o nosso, é muito importante que seja definido os tipos de usuários e as permissões de cada um. Então, nesse requisito vamos permitir o cadastro de novos usuários.
+●	Gerenciamento de perfil: é necessário que haja um controle de informações dos usuários, como seu nome, data de nascimento e seus objetivos sustentáveis, visando ainda a análise de dados.
+●	Definição das metas sustentáveis: o sistema irá permitir que o usuário crie suas metas pessoais referentes à sustentabilidade, como, por exemplo, o quanto quer economizar no consumo de água. Além disso, o EcoLife será capaz de oferecer novos objetivos sustentáveis através da análise de perfil do usuário. 
+●	Monitoramento dos hábitos e consumos: o sistema vai ser responsável também por fazer o acompanhamento e registro dos hábitos diários dos usuários, por meio da entrada manual dos valores ou fazendo automatização com dispositivos e sensores.
+●	Comunicação: nesse requisito, o sistema irá enviar alertas e lembretes para o usuário sobre suas metas a serem batidas.
+●	Relatórios de Sustentabilidade: o EcoLife vai gerar relatórios sobre os consumos registrados e exibir gráficos e estatísticas sobre o progresso dos usuários.
+
+
+
+
+
+7.     REQUISITOS NÃO FUNCIONAIS
+ Os requisitos não funcionais englobam as restrições e qualidades do sistema, fazendo com que ele funcione de modo seguro, confiável e eficaz. Desse modo, escolhemos os seguintes requisitos não funcionais do nosso sistema: 
+●	Segurança: para termos segurança, um controle de acesso ao sistema que somente os usuários têm acesso, como os administradores.
+●	Deve conter autenticação para impedir acessos inadequados.                     
+●	Desempenho: o sistema deve suportar o uso de diversos usuários ao mesmo tempo.
+●	Acessibilidade: ele deve conter compatibilidade com qualquer tipo de dispositivo, como celulares e tablets.
+●	Fácil acesso: ele deve estar ativo 24/7, reduzindo os intervalos de inatividade. 
+●	Performance: o sistema deve suportar um grande número de cadastros e dados, sem perda de atividade.
+●	Acessibilidade: a interface deve ser clara, para o fácil acesso pessoal..
+ 
+
+8.     METODOLOGIA APLICADA AO PROJETO
+
+Detalhamento das Etapas:
+
+     Organização da equipe pelo professor em times com 5 pessoas. Explicação do processo de desenvolvimento do projeto, apresentação do cronograma geral com as etapas avaliativas, após isso, pensar sobre o tema e requisitos básicos do projeto e esclarecimento de dúvidas gerais sobre as etapas.
+Então, serão pesquisados os requisitos básicos buscando referências bibliográficas e artigos científicos que contextualizem os requisitos no contexto do projeto. Deverão discutir e definir que ferramentas de software de apoio serão utilizadas para o desenvolvimento do projeto. Deverão montar um cronograma com as atividades levantadas pela equipe e atribuir período de planejamento e execução com nome dos responsáveis por cada atividade, se atentando às datas de entrega avaliativas do professor. Todos os itens produzidos nesta etapa serão documentados no modelo descritivo (gerando um doc) e postados no CANVAS nas datas determinadas pelo professor.
+O time deverá executar gradativamente as etapas do projeto, com a execução da alimentação da documentação e programação do sistema a ser desenvolvido, apresentar as atividades seguindo etapas avaliativas através de conversas/reuniões com o professor.
+A equipe então, irá reavaliar e readequar as atividades apontadas pelo professor durante as reuniões como pontos a serem revistos e corrigidos, e se for necessário, realizar novos estudos, pesquisas, conversar com os outros professores das outras disciplinas contribuintes, para o aperfeiçoamento do projeto.
+Há em seguida, o processo de refinamento, realização de testes e finalização do projeto e da documentação a ser entregue, e preparação da apresentação final. O grupo será avaliado pelo professor através de uma apresentação no próprio laboratório de informática.
+A metodologia adotada garante que todas as etapas sejam bem estruturadas, com momentos de revisão e correção para assegurar a qualidade do produto final.
+
+
+
+9.     ACOMPANHAMENTO DA GESTÃO DO PROJETO
+  
+https://trello.com/b/uMKFIzWa
+
+
+
+10. PREMISSAS
+
+Premissas de nosso sistema:
+●	O sistema será desenvolvido em Python.
+●	O sistema vai permitir a entrada de dados relacionados ao consumo de recursos e meio de transporte utilizado diariamente.
+●	A classificação de sustentabilidade seguirá os critérios estabelecidos nas tabelas de classificação fornecidas.
+●	A equipe utilizará ferramentas de versionamento como o Git e GitHub para controle do código-fonte.
+●	O progresso do desenvolvimento será acompanhado por meio do Trello.
+●	As decisões do projeto serão baseadas nos conceitos aprendidos nas disciplinas envolvidas, como Algoritmos de Programação e Tecnologias em TI.
+●	A metodologia aplicada será a Aprendizagem Baseada em Projetos (PBL), permitindo que os alunos desenvolvam o projeto de forma colaborativa e estruturada.
+
+
+
+11. RESTRIÇÕES
+
+●	O sistema deve ser desenvolvido em Python, não sendo permitida a utilização de outras linguagens para o backend.
+●	O sistema deverá operar com entrada de dados manuais, não integrando sensores ou automação nesta fase.
+●	O algoritmo deve seguir estritamente as regras de classificação definidas nas tabelas.
+●	O projeto deve ser entregue dentro dos prazos estabelecidos pelo professor, no cronograma acadêmico da matéria.
+●	A gestão do projeto deve ser realizada utilizando ferramentas recomendadas, como Trello para acompanhamento de tarefas e GitHub para versionamento.
+●	O sistema não deverá armazenar os dados de forma persistente, focando apenas na leitura, processamento e exibição de resultados.
+●	A interface do sistema deve ser simples e intuitiva, permitindo a entrada e visualização de dados sem complexidade.
+●	Os recursos utilizados devem ser compatíveis com o ambiente acadêmico, sem necessidade de aquisição de hardware adicional.
+●	Para utilização do sistema o usuário precisará possuir um computador para ter acesso e usufruir de todas as funcionalidades disponíveis no programa.
+●	 O projeto deverá ser terminado com prazo até a data de 08/06/2024.
+
+12. PRINCIPAIS TELAS DO SISTEMA, DESCRIÇÃO FUNCIONAMENTO
+ As principais telas do EcoLife vão ser:
+●	Tela de login e cadastro: o usuário realizará seu login ou o cadastro (caso seja a primeira vez acessando) utilizando e-mail e senha.
+●	Tela de definição e gestão de meta: essa é a tela em que os usuários irão criar suas metas pessoais de consumo, podendo editá-las a qualquer momento. 
+●	Tela de registros de hábitos: é onde haverá a entrada manual de dados sobre o consumo pessoal do usuário.
+●	Tela de configurações: os usuários poderão editar suas informações pessoais, redefinir a senha e excluir sua conta.
+●	Tela de relatórios dos indicadores: nesta tela, o EcoLife irá gerar relatórios sobre o consumo mensal e anual do usuário.
+ 
+13. CONCLUSÃO
+ 
+    Por fim, podemos concluir que o projeto destaca a importância do monitoramento de sustentabilidade individual como uma ferramenta essencial para conscientização e mudança de hábitos em relação ao consumo de recursos naturais. Por meio da coleta e análise de dados sobre o uso de água, energia, geração de lixo e escolha de transporte, os usuários podem visualizar de maneira clara seu impacto ambiental diário. Essa abordagem não apenas permite um maior controle sobre práticas individuais, mas também incentiva a adoção de hábitos mais sustentáveis, promovendo um estilo de vida mais equilibrado e responsável.
+ 
+
+
+
+
+
+REFERÊNCIAS
+https://cnm.org.br 
+https://agenciabrasil.ebc.com.br/economia/noticia/2024-02/geracao-de-lixo-no-mundo-pode-chegar-38-bi-de-toneladas-em-2050#:~:text=De%20acordo%20com%20o%20Panorama,h%C3%A1%20mais%20de%20uma%20d%C3%A9cada.
+https://www.sigaverde.com/poluicao-dos-transportes/
+https://repositorio.ipea.gov.br/bitstream/11058/5574/1/BRU_n05_emiss%C3%B5es.pdf
+
+
+
+ 
+
