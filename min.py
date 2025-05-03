@@ -1,3 +1,4 @@
+print ("Sistema de Sustentabilidade Pessoal")
 dig_cor=False
 while not dig_cor:
     try:
@@ -41,7 +42,7 @@ print("Data:", data_geral)
 Litro_Correto=False
 while not Litro_Correto:
     try:
-        resposta=int(input("Quantos litros foram consumidos hoje? "))
+        resposta=int(input("Quantos litros de água foram consumidos hoje? "))
     except ValueError:
         print("o valor inserido é invalido")
     else:
@@ -49,13 +50,13 @@ while not Litro_Correto:
             print("o valor inserido é invalido")
         else:
             if resposta<150:
-                print("🟢Alta sustentabilidade!")
+                print("🟢 Alta sustentabilidade!")
                 Litro_Correto=True
             elif resposta<200:
                 print ("🟡 Sustentabilidade Moderada!")
                 Litro_Correto=True
             else:
-                print ("🔴Baixa Sustentabilidade!")
+                print ("🔴 Baixa Sustentabilidade!")
                 Litro_Correto=True
 
 
@@ -129,5 +130,5 @@ while not Mtransporte_correto:
             print ("🔴 Baixa Sustentabilidade!")
             Mtransporte_correto=True
 
-print ("PROGRAMA ENCERRADO")
+print ("Programa Encerrado!")
     

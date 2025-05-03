@@ -1,0 +1,34 @@
+Projeto é um empreendimento planejado, que objetiva resultados, composto por um conjunto de atividades interdependentes com início e término definidos, que visam atingir um objetivo claro e específico. Ele envolve a alocação de recursos, a definição de prazos e a execução coordenada de tarefas para entregar um produto, serviço ou solução que atenda a uma necessidade ou resolva um problema. Além disso, um projeto pode incluir etapas de planejamento, execução, monitoramento e encerramento, garantindo que os resultados esperados sejam alcançados de forma eficiente, resolvendo o problema objetivado.
+
+Visando isso, escolhemos os seguintes projetos para serem aprofundados:
+
+1. Sistema de Gestão Escolar:
+Um sistema para escolas gerenciarem alunos, professores e turmas.
+ * Funcionalidades:
+a. Cadastro de alunos, professores e turmas
+b. Controle de notas e frequência
+c. Geração de boletins automáticos
+
+2. Sistema de Gerenciamento de Biblioteca:
+Gerência livros, usuários e empréstimos.
+* Funcionalidades:
+a. Cadastro de livros e usuários
+b. Registro de empréstimos e devoluções
+c. Avisos de atraso e multas 
+
+3. Sistema de uma clínica:
+* Gerenciam agendamento de consultas.
+a. Funcionalidades:
+b. Marcam consultas e acertam o pagamento via convênio ou particular
+c. Apresentam os médicos disponíveis, sua especialidade e CRM
+d. Enviam notificações como lembrete da consulta
+
+4. Sistema de Plataforma de Vagas de Emprego
+* Permite que empresas publiquem vagas e candidatos se candidatem.
+a. Funcionalidades:
+b. Empresas postam vagas
+c. Usuários criam perfis e enviam currículos
+d. Sistema de recomendação baseado no perfil
+
+Bibliografia:
+INAP - Introdução à Gestão de Projetos
