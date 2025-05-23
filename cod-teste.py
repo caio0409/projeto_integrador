@@ -2,10 +2,10 @@ import mysql.connector
 
 try:
     conexao = mysql.connector.connect(
-        host="172.16.12.14",      
-        user="BD24022525",          
-        password="Qzrgb5",        
-        database="BD24022525"     
+        host="localhost",      
+        user="root",          
+        password="120821",        
+        database="BD_PI_Teste"     
     )
     cursor = conexao.cursor()
 except mysql.connector.Error as err:
@@ -168,9 +168,7 @@ def alterar_registro():
     nome = input("Digite o nome: ").strip()
     data = input("Digite a data do registro (AAAA-MM-DD): ").strip()
     try:
-        conn = conexao()
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM InfoSustentáveis WHERE Nome = %s AND Dia = %s", (nome, data))
+        cursor.execute("SELECT * FROM InfoSustentaveis WHERE Nome = %s AND Dia = %s", (nome, data))
         if cursor.fetchone():
             print("Digite os novos valores:")
             litros = float(input("Litros de água: "))
@@ -179,11 +177,11 @@ def alterar_registro():
             porcent = int(input("Porcentagem reciclado: "))
             transporte = int(input("Transporte (1-6): "))
             cursor.execute("""
-                UPDATE InfoSustentáveis
+                UPDATE InfoSustentaveis
                 SET Litros_Agua = %s, Kwh = %s, KG = %s, Porcent_KG = %s, Transporte = %s
                 WHERE Nome = %s AND Dia = %s
             """, (litros, kwh, kg, porcent, transporte, nome, data))
-            conn.commit()
+            conexao.commit()
             print("Registro atualizado com sucesso.")
         else:
             print("Registro não encontrado.")
@@ -191,7 +189,6 @@ def alterar_registro():
         print("Erro ao atualizar:", err)
     finally:
         cursor.close()
-        conn.close()
 
 while True:
     print("\n==== MENU ====")
