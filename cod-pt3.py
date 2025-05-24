@@ -7,7 +7,7 @@ try:
         password="120821",        
         database="BD_PI_Teste"     
     )
-    cursor = conexao.cursor()
+    cursor = conexao.cursor(dictionary=True)
 except mysql.connector.Error as err:
     print(f"Erro ao conectar ao MySQL: {err}")
     exit()
@@ -169,26 +169,59 @@ def alterar_registro():
     data = input("Digite a data do registro (AAAA-MM-DD): ").strip()
     try:
         cursor.execute("SELECT * FROM InfoSustentaveis WHERE Nome = %s AND Dia = %s", (nome, data))
-        if cursor.fetchone():
-            print("Digite os novos valores:")
-            litros = float(input("Litros de água: "))
-            kwh = float(input("kWh: "))
-            kg = float(input("KG de resíduos: "))
-            porcent = int(input("Porcentagem reciclado: "))
-            transporte = int(input("Transporte (1-6): "))
+        resultado = cursor.fetchone()
+        
+        if resultado:
+            litros = float(resultado["Litros_Agua"])
+            kwh = float(resultado["Kwh"])
+            kg = float(resultado["KG"])
+            porcent = int(resultado["Porcent_KG"])
+            transporte = int(resultado["Transporte"])
+
+            while True:
+                print("\nDados atuais:")
+                print(f"1. Litros de água: {litros}")
+                print(f"2. kWh: {kwh}")
+                print(f"3. KG de resíduos: {kg}")
+                print(f"4. % reciclado: {porcent}")
+                print(f"5. Transporte: {transporte}")
+                print("6. Finalizar alterações")
+
+                try:
+                    opc = int(input("Escolha o campo que deseja alterar (1-6): "))
+                except ValueError:
+                    print("Digite um número válido.")
+                    continue
+
+                if opc == 1:
+                    litros = float(input("Novo valor para litros de água: "))
+                elif opc == 2:
+                    kwh = float(input("Novo valor para kWh: "))
+                elif opc == 3:
+                    kg = float(input("Novo valor para KG de resíduos: "))
+                elif opc == 4:
+                    porcent = int(input("Nova porcentagem reciclada: "))
+                elif opc == 5:
+                    print("\n1. Transporte público 🚌 \n2. Bicicleta 🚲 \n3. Caminhada 🚶 \n4. Carro (com gasolina) 🚗 \n5. Carro elétrico 💡 \n6. Carona Compartilhada 👥")
+                    transporte = int(input("Novo meio de transporte: "))
+                elif opc == 6:
+                    break
+                else:
+                    print("Opção inválida.")
+
             cursor.execute("""
                 UPDATE InfoSustentaveis
                 SET Litros_Agua = %s, Kwh = %s, KG = %s, Porcent_KG = %s, Transporte = %s
                 WHERE Nome = %s AND Dia = %s
             """, (litros, kwh, kg, porcent, transporte, nome, data))
             conexao.commit()
-            print("Registro atualizado com sucesso.")
+            print("✅ Registro atualizado com sucesso.")
         else:
-            print("Registro não encontrado.")
+            print("❌ Registro não encontrado.")
     except mysql.connector.Error as err:
         print("Erro ao atualizar:", err)
-    finally:
-        cursor.close()
+
+
 
 while True:
     print("\n==== MENU ====")
