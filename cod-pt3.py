@@ -143,13 +143,21 @@ def buscar_registros():
         cursor.execute("SELECT * FROM InfoSustentaveis WHERE Nome = %s", (nome_busca,))
         resultados = cursor.fetchall()
         if resultados:
-            print("\nRegistros encontrados:")
+            print("\n📋 Registros encontrados:")
             for row in resultados:
-                print(row)
+                print()
+                print(f"Nome.............: {row['Nome']}")
+                print(f"Data.............: {row['Dia']}")
+                print(f"Litros de água...: {row['Litros_Agua']}")
+                print(f"kWh consumido....: {row['Kwh']}")
+                print(f"Resíduos (KG)....: {row['KG']}")
+                print(f"% Reciclado......: {row['Porcent_KG']}")
+                print(f"Transporte.......: {row['Transporte']}")
         else:
             print("Nenhum registro encontrado para esse nome.")
     except mysql.connector.Error as err:
         print(f"Erro ao buscar: {err}")
+
 
 def deletar_registro():
     nome_del = input("Digite o nome para deletar: ").strip()
